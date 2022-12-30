@@ -12,8 +12,8 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+strings.sort(function (b, a){return a.length-b.length});
+return strings[0]
 }
-
 // No modifiques nada debajo de esta linea //
-
 module.exports = stringMasLarga
